@@ -1,0 +1,74 @@
+@import "../../global/variables.scss";
+
+.category-list-container {
+    display: block;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+
+        margin: 16px 8px 8px;
+        color: $color-regular-text;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &__item-wrapper {
+        /*display: grid;
+        padding: 20px 10px;
+        grid-template-columns: 1fr;
+        grid-gap: 48px;*/
+
+        display: block;
+        overflow: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        margin-top: 20px;
+        height: 145px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .category-list-container {
+        &__title {
+            font-size: 20px;
+            padding: 32px;
+        }
+
+        &__item-wrapper {
+            margin-top: 0;
+        }
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .category-list-container {
+        overflow: hidden;
+        white-space: normal;
+
+        &__title {
+            font-size: 28px;
+            line-height: 33px;
+            padding: 47px;
+        }
+
+        &__item-wrapper {  
+            display: flex;
+            flex-direction: row;
+            padding: 8px 20px 30px;
+            height: 271px;
+            width: 100%;
+            margin: 0;
+            grid-gap: 30px;
+            overflow: hidden;
+            justify-content: space-between;
+
+        }
+    }
+}

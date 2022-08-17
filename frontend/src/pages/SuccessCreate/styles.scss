@@ -1,0 +1,62 @@
+@import "../../global/variables.scss";
+
+.successCreate-container {
+    height: 100%;
+    width: 100%;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      margin-top: 180px;
+    }
+    
+    &__content {
+        width: 400px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        background-color: $bg-container;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+        @media (min-width: 768px) {
+            width: 1102px;
+            height: 446px;
+        }
+        
+
+        &__checked {
+            width: 74px;
+            height: 74px;
+        }
+
+        &__title{
+            color: #F6F7F8;
+            font-size: 24px;
+        }
+
+        &__button {
+            background-color: $bg-button;
+            text-decoration: none;
+            color: #1A1D22;
+            font-size: 15px;
+            font-weight: 700;
+            border: none;
+            width: 245px;
+            height: 40px;
+            text-align: center;
+            align-content: center;
+            letter-spacing: 1.0px;
+            font-family: Roboto Mono;
+            
+        }
+        
+
+    }
+}
+

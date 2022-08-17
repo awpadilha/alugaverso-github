@@ -1,0 +1,61 @@
+@import "../../global/variables.scss";
+
+.lands-page {
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 50px;
+
+  &__return-btn {
+    padding: 16px 0 6px 12px;
+
+    @media (min-width: 768px) {
+      padding: 24px 0 28px 30px;
+    }
+
+    button {
+      @extend %icon-button;
+
+    }
+
+    button svg {
+      @media (min-width: 768px) {
+        height: 28px;
+        width: 28px;
+      }
+    }
+  }
+
+  &__banner-img {
+    height: 68px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: $color-regular-text;
+    margin: 20px 0;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) {
+  .lands-page {
+    padding-bottom: 80px;
+
+    &__banner-img {
+      height: 200px;
+      width: calc(100% - 18px * 2);
+      margin: 0 18px;
+    }
+
+    &__title {
+      font-size: 28px;
+      line-height: 32px;
+      margin: 30px 0;
+    }
+  }
+}

@@ -1,0 +1,242 @@
+@import "../../global/variables.scss";
+
+.terrain-container {
+  padding: 16px 12px;
+  @media (min-width: 768px) {
+    padding: 80px 65px;
+  }
+
+  &__error-message {
+    display: block;
+    margin-top: 4px;
+    font-size: 14px;
+    color: $error-color;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-regular-text;
+
+    @media (min-width: 768px) {
+      font-size: 28px;
+      line-height: 33px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-regular-text;
+
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  &__input-content {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 60px;
+    }
+  }
+
+  &__form {
+    background: #25292e;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+
+    &--label {
+      display: block;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: $color-regular-text;
+      height: 16px;
+
+      margin: 12px 0;
+    }
+
+    &--start-adornment {
+      color: $color-regular-text;
+      margin-right: 8px;
+    }
+
+    &--field-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      align-items: start;
+
+      @media (min-width: 768px) {
+        grid-template-columns: 0.6fr 0.4fr;
+        gap: 90px;
+      }
+    }
+
+    &--field-group {
+      display: flex;
+
+      & > :not(button) {
+        flex: 1;
+      }
+
+      > * + * {
+        margin-left: 24px;
+      }
+
+      &--price {
+        width: calc(50% - 12px);
+
+        @media (min-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+
+    &--attributes-button {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: block;
+        height: 20px;
+        background: transparent;
+        margin-bottom: 4px;
+        border: none;
+      }
+    }
+
+    &--input {
+      font-family: "Roboto Mono", monospace !important;
+      background: $bg-body;
+      height: 30px;
+      padding: 16px;
+      width: 100%;
+
+      &.images {
+        margin-top: 28px;
+      }
+
+      input {
+        color: $color-regular-text;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    &--select {
+      font-family: 'Roboto Mono', monospace !important;
+      background: $bg-body;
+      height: 30px;
+      padding: 16px;
+      width: 100%;
+
+      .MuiSelect {
+        &-icon {
+          display: none;
+        }
+        &-select {
+          color: $color-regular-text;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 18px;
+          margin-left: -12px;
+        }
+      }
+
+      &-dropdown {
+        background: red;
+      }
+
+      &.MuiMenu-paper {
+        background: red;
+      }
+
+      .MuiMenuItem-root {
+        background: $bg-body;
+        color: $color-regular-text;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    &--button {
+      background: $bg-button;
+      height: 28px;
+      border: none;
+      margin: 30px auto 0;
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      font-family: Roboto Mono;
+
+      color: $bg-input;
+
+      @media (min-width: 768px) {
+        background: $bg-button;
+        width: 245px;
+        height: 40px;
+        border: none;
+        margin: 30px auto 0;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        font-family: Roboto Mono;
+
+        color: $bg-input;
+      }
+    }
+
+    &--checkbox {
+      .MuiTypography-root {
+        color: white;
+      }
+    }
+
+    &--textarea {
+      width: 100%;
+      font-family: "Roboto Mono", monospace !important;
+
+      > div {
+        padding: 0px;
+      }
+
+      textarea {
+        padding: 6px;
+        background: $bg-body;
+        height: 30px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+
+        color: $color-regular-text;
+      }
+    }
+
+    &--body-text {
+      display: block;
+      margin: 30px 0 16px;
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+
+      color: $color-regular-text;
+
+      &.images-title {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

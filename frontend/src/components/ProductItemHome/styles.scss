@@ -1,0 +1,242 @@
+@import "../../global/variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+.product-itemHome-container {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+
+    display: inline-block;
+    text-align: center;
+    padding: 10px 12px 10px;
+    width: 152px;
+    height: 291px;
+    margin: 0 10px 0px;
+
+    background: $bg-container;
+  
+    padding: 10px 12px;
+    min-height: 270px;
+    font-family: 'Roboto', sans-serif;
+
+
+    &__image-wrapper {
+        //display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    &__image {
+        /* height: 100%;
+        max-height: 129px;
+        max-width: 100%; */
+        width: 128px;
+        height: 129px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    &__wrapper-title {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+
+        color: $color-regular-text;
+
+        margin-bottom: 6px;
+
+        //overflow: hidden;
+        white-space: nowrap;
+        //text-overflow: ellipsis;
+    }
+
+    &__location {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        align-items: flex-start;
+        text-align: start;
+
+        color: $color-regular-text;
+        margin-bottom: 12px;
+        margin-top: 8px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: start;
+
+        color: $color-regular-text;
+        margin-bottom: 10px;
+
+        strong {
+            //display: block;
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+    }
+
+    &__divider {
+        width: 100%;
+        padding: 0 20px;
+        border-top: 1px solid $line;
+
+        /* &__stroke {
+            width: 100%;
+            border-top: 1px solid $line;
+        } */
+    }
+
+    &__button {
+        background: $bg-button;
+        width: 120px;
+        height: 26px;
+        border: none;
+        color: $color-button-text;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        padding: 4px 30px;
+        margin: 16px 0 0;
+
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .product-itemHome-container {
+        width: 172px;
+
+        &__title {
+            font-size: 15px;
+        }
+
+        &__location {
+            font-size: 12px;
+        }
+
+        &__description {
+            font-size: 12px;
+        }
+
+        &__button {
+            width: 130px;
+            font-size: 16px;
+            position: relative;
+            left: calc(50% - 65px);
+            margin: 20px 0 0;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .product-itemHome-container {
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        min-height: 270px;
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        margin: 0;
+    
+
+        &__image-wrapper {
+            display: block;
+            //max-width: 224px;
+            width: 100%;
+        }
+
+        &__image {
+            height: 100%;
+            max-height: 271px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &__wrapper {
+            //aplicação
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            //width: 316px;
+            width: 100%;
+        }
+
+        &__wrapper-title{
+            width: 100%;
+            text-align: start;
+            height: 84px;
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            width: 100%;
+            white-space: normal;
+            text-overflow: ellipsis;
+            text-align: start;
+        }
+
+        &__location {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            margin: 0;
+        }
+
+        &__description {
+            font-size: 20px;
+            line-height: 23px;
+            height: 23px;
+            margin: 0;
+            /* overflow: hidden; */
+            white-space: normal;
+            text-overflow: ellipsis;
+            strong {
+                font-size: 20px;
+            }
+        }
+
+        &__divider{
+            width: 100%;
+            margin-top: 29px;
+        }
+
+        &__button {
+            width: 150px;
+            height: 40px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            left: calc(50% - 79px);
+            bottom: 18px;
+            height: 40px;
+            border: none;
+          
+        }
+    }
+}

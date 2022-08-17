@@ -1,0 +1,66 @@
+@import "../../global/variables.scss";
+
+.about__container {
+    font-family: "Roboto", sans-serif;
+    color: $color-regular-text;
+    padding: 42px 20px 110px;
+    text-align: justify;
+
+    @media (min-width: 1024px) {
+        padding: 80px 70px 77px;
+    }
+
+    &__title-h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0 0 24px;
+
+        @media (min-width: 1024px) {
+            font-size: 28px;
+            line-height: 33px;
+        }
+    }
+
+    &__p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+
+        @media (min-width: 1024px) {
+            font-size: 20px;
+            line-height: 23px;
+        }
+
+        ul {
+            padding: 0 0 0 20px;
+        }
+    }
+
+    &__title-h2 {
+        font-family: "Roboto Mono", monospace;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        margin: 34px 0 42px;
+
+        @media (min-width: 1024px) {
+            font-size: 20px;
+            line-height: 26px;
+            margin: 36px 0 57px;
+        }
+    }
+
+    &__card-item {
+        gap: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media (min-width: 1024px){
+            gap: 48px;
+        }
+    }
+}

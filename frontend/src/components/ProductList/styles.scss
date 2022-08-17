@@ -1,0 +1,36 @@
+@import "../../global/variables.scss";
+
+.product-list-container {
+  padding: 0 16px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        margin: 0;
+        color: $color-regular-text;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        margin: 0;
+        padding: 6px 0 20px;
+        color: $color-regular-text;
+    }
+
+    &__items-wrapper {
+        display: flex;
+        width: 100%;
+        flex-flow: wrap;
+        justify-content: center;
+        gap: 16px;
+
+        @media (min-width: 1024px) {
+            gap: 48px;
+        }
+    }
+}

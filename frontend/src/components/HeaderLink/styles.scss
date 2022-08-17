@@ -1,0 +1,12 @@
+@import "../../global/variables.scss";
+
+.header-link {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  color: $color-header-text;
+  text-decoration: none;
+  padding: 2px 8px;
+  border-bottom: 2px solid $border-color-link;
+}

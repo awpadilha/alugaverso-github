@@ -1,0 +1,14 @@
+@import "../../global/variables.scss";
+
+.main {
+  min-height: calc(100vh - #{$footer-height-mobile});
+  width: 100%;
+  padding-top: $header-height-mobile;
+  background-color: $bg-body;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-top: $header-height;
+  }
+}

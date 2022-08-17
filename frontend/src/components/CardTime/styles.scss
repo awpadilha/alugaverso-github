@@ -1,0 +1,99 @@
+@import "../../global/variables.scss";
+
+.card__container {
+    padding: 16px 12px;
+    background: $bg-container;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 152px;
+    height: 250px;
+
+    @media (min-width: 1024px) {
+        padding: 27px 34px;
+        width: 289px;
+        height: 442px;
+    }
+
+    &__image-wrapper {
+        width: 100%;
+        height: 117px;
+        margin: 0 0 16px;
+
+        @media (min-width: 1024px) {
+            width: 219px;
+            height: 258px;
+            margin: 0 0 18px;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 117px;
+
+        @media (min-width: 1024px) {
+            height: 258px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+
+        @media (min-width: 1024px) {
+          gap: 13px;
+        }
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+
+        @media (min-width: 1024px) {
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+
+    &__divider {
+        border: 1px solid $line;
+    }
+
+    &__office {
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 12px;
+
+        @media (min-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    &__social-media {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 16px;
+
+        @media (min-width: 1024px){
+            gap: 19px;
+        }
+
+        &__link {
+            color: $light-icon;
+
+            svg {
+                width: 10px;
+                height: 10px;
+                @media (min-width: 1024px) {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+}

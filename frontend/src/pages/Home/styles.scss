@@ -1,0 +1,40 @@
+@import "../../global/variables.scss";
+.home-container {
+  background: $bg-body; 
+
+  &__product-listHome-wrapper {
+    padding: 20px 0 0;
+
+    @media (min-width: 768px){
+      padding: 10px 0 0;
+      height: auto;
+    }
+
+    @media (min-width: 1024px){
+      padding: 30px;
+      display: block;
+      height: auto;
+    }
+  }
+
+  .home-container__product-list-wrapper{
+    padding: 20px 20px 60px;
+
+    @media (min-width: 768px){
+      padding: 0;
+      height: auto;
+    }
+
+    @media (min-width: 1024px){
+      padding: 0 30px 30px;
+      display: block;
+      height: auto;
+    }
+  }
+
+  .category-list-container {
+    margin: 0 ;
+    width: 100%;
+    
+  }
+}

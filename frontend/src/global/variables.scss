@@ -1,0 +1,68 @@
+// IMPORTANTE: NÃO USAR MAIS ESSAS VARIÁVEIS ANTIGAS DAS CORES
+// elas serão apagadas futuramente, só continuam por enquanto para manter o app funcionando enquanto a refatoração do novo design não termina.
+$darker-black: #14181D;
+$lighter-black: #1B2026;
+$bright-blue: #0055FF;
+$cerulean-blue: #00A8CA;
+
+$darker-gray: #A0A4A7;
+$lighter-gray: #A9ACAF;
+$grayish-black: #1F2328;
+
+$bright-yellow: #FBC02D;
+
+// Colors by function
+$bg-color: $darker-black;
+
+// Sizes
+$header-height: 80px;
+$footer-height: 64px;
+$header-height-mobile: 38px;
+$footer-height-mobile: 37px;
+
+// NEW COLOR PALETTE
+// Agora num sistema de cor por função, e não por nome da cor.
+// Se a variável que você precisa para uma função não está aqui, favor criar uma usando a cor do figma ao invés de reaproveitar outra variável que tenha a mesma cor mas que seja para outra função.
+
+// Background colors
+$bg-body: #1A1D22;
+$bg-container: #25292E;
+$bg-header: #169DC3;
+$bg-header-mobile: #1A1D22;
+$bg-footer: #169DC3;
+$bg-input: #1A1D22;
+$bg-button: #169DC3;
+$bg-avatar: #1A1D22;
+$bg-avatar-mobile: #169DC3;
+$bg-input-form-home:#25292E;
+
+
+// Font colors
+$color-button-text: #1A1D22;
+$color-header-text: #1A1D22;
+$color-footer-text: #1A1D22;
+$color-regular-text: #F6F7F8;
+
+// Other colors
+$error-color: #FF6827;
+$disabled-color: #787A7D;
+$placeholder-color: #787A7D;
+$line: #169DC3;
+$header-line: #1A1D22;
+$border-color-link: #1A1D22;
+$border-color-colored: #169DC3;
+$colored-icon: #169DC3;
+$light-icon: #F6F7F8;
+$dark-icon: #1A1D22;
+
+// Biblioteca da galeria
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+// Sass placeholders
+%icon-button {
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline-color: $colored-icon;
+}
